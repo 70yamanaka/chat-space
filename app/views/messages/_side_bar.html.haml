@@ -1,10 +1,11 @@
 .chat-side
     .side-header
-        .side-header__user-name seo
+        .side-header__user-name 
+            = current_user.name
         .side-header__menu
             = link_to "#" do
                 .fa.fa-edit.icon
-            = link_to "#" do
+            = link_to edit_user_path(current_user) do
                 .fa.fa-cog.icon
     .group
         .group__name
