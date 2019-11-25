@@ -1,0 +1,25 @@
+.chat-main
+    .main-header
+        .main-header__left
+            .main-header__left__group
+                group name
+            .main-header__left__list
+                Member : 
+        .main-header__edit-btn 
+            Edit
+    .messages
+        .message
+            .message__upper-info
+                .message__upper-info__talker
+                    shouya
+                .message__upper-info__date 
+                    2019/11/23(Sat) 21:39:34
+            .message__text 
+                this is a first message
+    .form
+        .form__input-box
+            %input.form__text{placeholder: "type a message", type: "text"}
+            %label.form__image
+                = icon('fas', 'image')
+                %input.form__file{type: "file"}
+            %input.form__submit-btn{type: "submit", value: "Send"}
