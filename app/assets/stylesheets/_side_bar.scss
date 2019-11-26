@@ -21,14 +21,15 @@
         .icon {
             color: white;
         }
-        .group {
-            width: 300px;
+        .groups {
             height: calc(100vh - 100px);
             background-color: #2f3e51;
-            color: #FFFF;
-            font-weight: bold;
             padding: 20px 20px 0;
+            width: 300px;
             box-sizing: border-box;
+            .group {
+                color: #FFFF;
+                text-decoration: none;
             &__name {
                 font-size: 15px;
             }
@@ -36,5 +37,6 @@
                 font-size: 11px;
                 margin-bottom: 40px;
             }
-        }
+            } 
+        }       
 }
