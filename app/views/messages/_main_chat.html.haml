@@ -2,9 +2,14 @@
     .main-header
         .main-header__left
             .main-header__left__group
-                group name
+                = @group.name
             .main-header__left__list
-                Member : 
+                .left-header__members
+                Member：
+                - @group.users.each_with_index do |user, i|
+                    - unless i.zero?
+                        ,
+                    = user.name 
         .main-header__edit-btn 
             Edit
     .messages
