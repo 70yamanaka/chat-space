@@ -9,8 +9,8 @@
                 - @group.users.each_with_index do |user, i|
                     - unless i.zero?
                         ,
-                    = user.name 
-        .main-header__edit-btn 
+                    = user.name  
+        = link_to edit_group_path(@group.id), class: "main-header__edit-btn" do
             Edit
     .messages
         = render partial: 'message', collection: @messages          
