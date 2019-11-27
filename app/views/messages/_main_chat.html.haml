@@ -8,14 +8,7 @@
         .main-header__edit-btn 
             Edit
     .messages
-        .message
-            .message__upper-info
-                .message__upper-info__talker
-                    shouya
-                .message__upper-info__date 
-                    2019/11/23(Sat) 21:39:34
-            .message__text 
-                this is a first message
+        = render partial: 'message', collection: @messages          
     .form
         = form_for [@group, @message] do |f|
             .form__input-box 
