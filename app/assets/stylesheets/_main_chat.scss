@@ -26,6 +26,7 @@
                 border: solid 1px #38aef0;
                 color: #38aef0;
                 margin-top: 28px;
+                text-decoration: none;
             }
         }
         .messages {
@@ -33,6 +34,7 @@
             background-color: #fafafa;
             padding: 46px 40px;
             box-sizing: border-box;
+            overflow: scroll;
         }
         .message {
             padding-bottom: 40px;
@@ -68,10 +70,12 @@
             }
             &__text {
                 height: 50px;
-                width: 100%;
-                padding: 0 40px 0 10px;
+                width: calc(100% - 150px);
+                padding: 0 25px 0 10px;
                 color: #434a54;
                 border-style: none;
+                position: absolute;
+                margin-right: 10px;
             }
             &__image {
                 font-size: 1.3rem;
@@ -86,9 +90,11 @@
                 width: 100px;
                 height: 50px;
                 padding: 0 30px;
-                margin-left: 15px;
+                margin-left: 30px;
                 background-color: #38aef0;
                 color: white;
+                position: absolute;
+                right: 0px;
             }
         }
 }
