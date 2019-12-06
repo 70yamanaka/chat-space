@@ -3,9 +3,9 @@
         .side-header__user-name 
             = current_user.name
         .side-header__menu
-            = link_to new_group_path do
+            = link_to new_group_path, class: "side-header__btn" do
                 .fa.fa-edit.icon
-            = link_to edit_user_path(current_user) do
+            = link_to edit_user_path(current_user), class: "side-header__btn" do
                 .fa.fa-cog.icon
     .groups
         - current_user.groups.each do |group|

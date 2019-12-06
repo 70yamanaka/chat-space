@@ -18,8 +18,10 @@
             }
         
         }
-        .icon {
+        .side-header__btn {
             color: white;
+            text-decoration: none;
+            border-style: none;
         }
         .groups {
             height: calc(100vh - 100px);
